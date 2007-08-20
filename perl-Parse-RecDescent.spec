@@ -1,7 +1,7 @@
 %define name perl-Parse-RecDescent
 %define real_name Parse-RecDescent
 %define version 1.94
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:	A recursive descent parser generator for Perl
 Name:		%{name}
