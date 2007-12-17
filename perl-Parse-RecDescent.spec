@@ -13,7 +13,6 @@ Source0:	ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Parse/%{real_
 Url:		http://search.cpan.org/dist/%{real_name}/
 BuildRequires:	perl-devel
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-root
 Requires:	perl
 
 %description
