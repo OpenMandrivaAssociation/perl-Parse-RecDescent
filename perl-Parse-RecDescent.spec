@@ -4,7 +4,7 @@
 Summary:	A recursive descent parser generator for Perl
 Name:		%{name}
 Version:	1.94
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	GPL or Artistic
 Group:		Development/Perl
 Source0:	ftp://ftp.pasteur.fr/pub/computing/CPAN/modules/by-module/Parse/%{real_name}-%{version}.tar.bz2
