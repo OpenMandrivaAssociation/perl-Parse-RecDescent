@@ -1,5 +1,5 @@
 %define upstream_name    Parse-RecDescent
-%define upstream_version 1.962.2
+%define upstream_version 1.963
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
