@@ -1,14 +1,14 @@
 %define modname	Parse-RecDescent
-%define modver	1.965001
+%define modver 1.967009
 
 Summary:	A recursive descent parser generator for Perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Parse/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-RecDescent-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -38,4 +38,5 @@ rm -f %{buildroot}%{_mandir}/*/Text*
 %doc README Changes tutorial/*
 %{perl_vendorlib}/Parse
 %{_mandir}/man3/*
+
 
