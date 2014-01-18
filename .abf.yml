@@ -1,2 +1,4 @@
+removed_sources:
+  Parse-RecDescent-1.965001.tar.gz: bec47f6a011b1c2dd1175b15c106fbdd51cbcd55
 sources:
-  "Parse-RecDescent-1.965001.tar.gz": bec47f6a011b1c2dd1175b15c106fbdd51cbcd55
+  Parse-RecDescent-1.967009.tar.gz: b88413ed0fdd649a1ac50f6966e711d61f322de6
