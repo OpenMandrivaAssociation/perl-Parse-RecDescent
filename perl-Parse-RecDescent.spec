@@ -10,6 +10,8 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-RecDescent-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Text::Balanced)
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
 %description
