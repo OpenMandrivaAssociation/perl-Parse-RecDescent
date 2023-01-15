@@ -1,14 +1,13 @@
 %define modname	Parse-RecDescent
-%define modver 1.967009
 
 Summary:	A recursive descent parser generator for Perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
+Version:	1.967015
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-RecDescent-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-RecDescent-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Text::Balanced)
 BuildRequires:	perl(Test::More)
@@ -19,19 +18,19 @@ The Parse::RecDescent perl module is used to generate recursive descent
 parsers from powerful grammar specifications.
 
 %prep
-%setup -qn %{modname}-%{modver}
-%__perl -p -i -e 's|#!.*/usr/local/bin/perl|#!/usr/bin/perl|' `find . -name '*.pl'`
+%autosetup -p1 -n %{modname}-%{version}
+perl -p -i -e 's|#!.*/usr/local/bin/perl|#!/usr/bin/perl|' `find . -name '*.pl'`
 find -type f | xargs chmod 644
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 # now in perl
 rm -f %{buildroot}%{_mandir}/*/Text*
@@ -40,5 +39,3 @@ rm -f %{buildroot}%{_mandir}/*/Text*
 %doc README Changes tutorial/*
 %{perl_vendorlib}/Parse
 %{_mandir}/man3/*
-
-
