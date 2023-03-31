@@ -3,7 +3,7 @@
 Summary:	A recursive descent parser generator for Perl
 Name:		perl-%{modname}
 Version:	1.967015
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
